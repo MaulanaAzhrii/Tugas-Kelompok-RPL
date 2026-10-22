@@ -1,0 +1,112 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram id="obj" name="Object Diagram">
+    <mxGraphModel dx="3650" dy="1737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1654" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="user1" parent="1" style="swimlane;fontStyle=5;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#FFF2CC;strokeColor=#333333;fontColor=#000000;" value="user1 : User" vertex="1">
+          <mxGeometry height="102" width="173" x="490" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="user1_a" parent="user1" style="text;strokeColor=none;fillColor=#FFF9E6;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;portConstraint=eastwest;html=1;whiteSpace=nowrap;" value="id_user = 1&lt;br&gt;username = &quot;budi99&quot;&lt;br&gt;password = &quot;********&quot;&lt;br&gt;role = &quot;Pelanggan&quot;" vertex="1">
+          <mxGeometry height="76" width="173" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="session1" parent="1" style="swimlane;fontStyle=5;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#FFF2CC;strokeColor=#333333;fontColor=#000000;" value="session1 : Session" vertex="1">
+          <mxGeometry height="85" width="251" x="770" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="session1_a" parent="session1" style="text;strokeColor=none;fillColor=#FFF9E6;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;portConstraint=eastwest;html=1;whiteSpace=nowrap;" value="id_session = 501&lt;br&gt;id_user = 1&lt;br&gt;login_at = &quot;2026-10-12 09:15:00&quot;" vertex="1">
+          <mxGeometry height="59" width="251" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="pelanggan1" parent="1" style="swimlane;fontStyle=5;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#DAE8FC;strokeColor=#333333;fontColor=#000000;" value="pelanggan1 : Pelanggan" vertex="1">
+          <mxGeometry height="119" width="315" x="419" y="289" as="geometry" />
+        </mxCell>
+        <mxCell id="pelanggan1_a" parent="pelanggan1" style="text;strokeColor=none;fillColor=#EEF4FD;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;portConstraint=eastwest;html=1;whiteSpace=nowrap;" value="id_pelanggan = 11&lt;br&gt;id_user = 1&lt;br&gt;nama = &quot;Budi Santoso&quot;&lt;br&gt;alamat = &quot;Jl. Raya Bogor No. 12, Jakarta&quot;&lt;br&gt;telepon = &quot;081234567890&quot;" vertex="1">
+          <mxGeometry height="93" width="315" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="keranjang1" parent="1" style="swimlane;fontStyle=5;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#FFF2CC;strokeColor=#333333;fontColor=#000000;" value="keranjang1 : Keranjang" vertex="1">
+          <mxGeometry height="85" width="180" x="856" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="keranjang1_a" parent="keranjang1" style="text;strokeColor=none;fillColor=#FFF9E6;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;portConstraint=eastwest;html=1;whiteSpace=nowrap;" value="id_keranjang = 31&lt;br&gt;id_pelanggan = 11&lt;br&gt;total = 650000" vertex="1">
+          <mxGeometry height="59" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="item1" parent="1" style="swimlane;fontStyle=5;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#FFF2CC;strokeColor=#333333;fontColor=#000000;" value="item1 : ItemKeranjang" vertex="1">
+          <mxGeometry height="119" width="173" x="910" y="557" as="geometry" />
+        </mxCell>
+        <mxCell id="item1_a" parent="item1" style="text;strokeColor=none;fillColor=#FFF9E6;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;portConstraint=eastwest;html=1;whiteSpace=nowrap;" value="id_item = 41&lt;br&gt;id_keranjang = 31&lt;br&gt;id_kasur = 2&lt;br&gt;jumlah = 1&lt;br&gt;subtotal = 650000" vertex="1">
+          <mxGeometry height="93" width="173" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="pesanan1" parent="1" style="swimlane;fontStyle=5;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#D5E8D4;strokeColor=#333333;fontColor=#000000;" value="pesanan1 : Pesanan" vertex="1">
+          <mxGeometry height="187" width="357" x="388" y="523" as="geometry" />
+        </mxCell>
+        <mxCell id="pesanan1_a" parent="pesanan1" style="text;strokeColor=none;fillColor=#E9F5E6;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;portConstraint=eastwest;html=1;whiteSpace=nowrap;" value="id_pesanan = 101&lt;br&gt;no_pesanan = &quot;PSN-20261012-001&quot;&lt;br&gt;id_pelanggan = 11&lt;br&gt;tanggal = &quot;2026-10-12&quot;&lt;br&gt;alamat_kirim = &quot;Jl. Raya Bogor No. 12, Jakarta&quot;&lt;br&gt;metode_bayar = &quot;Transfer Bank&quot;&lt;br&gt;total_harga = 3150000&lt;br&gt;status = &quot;Menunggu Konfirmasi&quot;&lt;br&gt;status_bayar = &quot;Belum Bayar&quot;" vertex="1">
+          <mxGeometry height="161" width="357" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="detail1" parent="1" style="swimlane;fontStyle=5;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#D5E8D4;strokeColor=#333333;fontColor=#000000;" value="detail1 : DetailPesanan" vertex="1">
+          <mxGeometry height="119" width="187" x="75" y="841" as="geometry" />
+        </mxCell>
+        <mxCell id="detail1_a" parent="detail1" style="text;strokeColor=none;fillColor=#E9F5E6;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;portConstraint=eastwest;html=1;whiteSpace=nowrap;" value="id_detail = 1001&lt;br&gt;id_pesanan = 101&lt;br&gt;id_kasur = 1&lt;br&gt;jumlah = 1&lt;br&gt;subtotal = 1850000" vertex="1">
+          <mxGeometry height="93" width="187" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="detail2" parent="1" style="swimlane;fontStyle=5;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#D5E8D4;strokeColor=#333333;fontColor=#000000;" value="detail2 : DetailPesanan" vertex="1">
+          <mxGeometry height="119" width="187" x="382" y="841" as="geometry" />
+        </mxCell>
+        <mxCell id="detail2_a" parent="detail2" style="text;strokeColor=none;fillColor=#E9F5E6;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;portConstraint=eastwest;html=1;whiteSpace=nowrap;" value="id_detail = 1002&lt;br&gt;id_pesanan = 101&lt;br&gt;id_kasur = 2&lt;br&gt;jumlah = 2&lt;br&gt;subtotal = 1300000" vertex="1">
+          <mxGeometry height="93" width="187" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="pembayaran1" parent="1" style="swimlane;fontStyle=5;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#D5E8D4;strokeColor=#333333;fontColor=#000000;" value="pembayaran1 : Pembayaran" vertex="1">
+          <mxGeometry height="153" width="229" x="688" y="824" as="geometry" />
+        </mxCell>
+        <mxCell id="pembayaran1_a" parent="pembayaran1" style="text;strokeColor=none;fillColor=#E9F5E6;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;portConstraint=eastwest;html=1;whiteSpace=nowrap;" value="id_pembayaran = 201&lt;br&gt;id_pesanan = 101&lt;br&gt;metode = &quot;Transfer Bank&quot;&lt;br&gt;jumlah = 3150000&lt;br&gt;tanggal = &quot;2026-10-12&quot;&lt;br&gt;bukti_bayar = &quot;bukti_201.jpg&quot;&lt;br&gt;status = &quot;Belum Bayar&quot;" vertex="1">
+          <mxGeometry height="127" width="229" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kasur1" parent="1" style="swimlane;fontStyle=5;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#DAE8FC;strokeColor=#333333;fontColor=#000000;" value="kasur1 : Kasur" vertex="1">
+          <mxGeometry height="170" width="244" x="46" y="1092" as="geometry" />
+        </mxCell>
+        <mxCell id="kasur1_a" parent="kasur1" style="text;strokeColor=none;fillColor=#EEF4FD;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;portConstraint=eastwest;html=1;whiteSpace=nowrap;" value="id_kasur = 1&lt;br&gt;kode = &quot;KSR-001&quot;&lt;br&gt;nama = &quot;Kasur Busa Super Inoac&quot;&lt;br&gt;ukuran = &quot;160 x 200 cm&quot;&lt;br&gt;ketebalan = &quot;20 cm&quot;&lt;br&gt;bahan = &quot;Busa Inoac Super&quot;&lt;br&gt;harga = 1850000&lt;br&gt;stok = 8" vertex="1">
+          <mxGeometry height="144" width="244" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kasur2" parent="1" style="swimlane;fontStyle=5;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#DAE8FC;strokeColor=#333333;fontColor=#000000;" value="kasur2 : Kasur" vertex="1">
+          <mxGeometry height="170" width="229" x="712" y="1092" as="geometry" />
+        </mxCell>
+        <mxCell id="kasur2_a" parent="kasur2" style="text;strokeColor=none;fillColor=#EEF4FD;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;portConstraint=eastwest;html=1;whiteSpace=nowrap;" value="id_kasur = 2&lt;br&gt;kode = &quot;KSR-002&quot;&lt;br&gt;nama = &quot;Kasur Busa Rebounded&quot;&lt;br&gt;ukuran = &quot;90 x 200 cm&quot;&lt;br&gt;ketebalan = &quot;10 cm&quot;&lt;br&gt;bahan = &quot;Busa Rebounded&quot;&lt;br&gt;harga = 650000&lt;br&gt;stok = 15" vertex="1">
+          <mxGeometry height="144" width="229" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" edge="1" parent="1" source="user1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;strokeColor=#333333;endArrow=none;" target="session1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" edge="1" parent="1" source="user1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;strokeColor=#333333;endArrow=none;" target="pelanggan1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" edge="1" parent="1" source="pelanggan1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;strokeColor=#333333;endArrow=none;" target="keranjang1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" edge="1" parent="1" source="pelanggan1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;strokeColor=#333333;endArrow=none;" target="pesanan1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" edge="1" parent="1" source="keranjang1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;strokeColor=#333333;endArrow=none;" target="item1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" edge="1" parent="1" source="item1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;strokeColor=#333333;endArrow=none;" target="kasur2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" edge="1" parent="1" source="pesanan1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;strokeColor=#333333;endArrow=none;" target="detail1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" edge="1" parent="1" source="pesanan1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;strokeColor=#333333;endArrow=none;" target="detail2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" edge="1" parent="1" source="pesanan1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;strokeColor=#333333;endArrow=none;" target="pembayaran1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n11" edge="1" parent="1" source="detail1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;strokeColor=#333333;endArrow=none;" target="kasur1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n12" edge="1" parent="1" source="detail2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;strokeColor=#333333;endArrow=none;" target="kasur2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n15" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;" value="&lt;b style=&amp;quot;font-size:22px&amp;quot;&gt;OBJECT DIAGRAM&lt;/b&gt;&lt;br&gt;Sistem Informasi Penjualan Kasur pada UMKM Taciex Foam (Contoh Snapshot Data pada Waktu Tertentu)" vertex="1">
+          <mxGeometry height="56" width="800" x="237" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
